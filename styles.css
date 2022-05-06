@@ -4,6 +4,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -21,6 +25,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #headerLogoDropDownContainer {
@@ -119,5 +125,40 @@ body {
   .headerButton {
     margin: 0 10px;
   }
+}
+
+#mainBodyContainer {
+  width: 100%;
+  background-color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#bodyInfoContainer {
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#headerText {
+  font-size: 70px;
+}
+
+#bodyInfoText {
+  font-size: 18px;
+  color: dimgray;
+}
+
+#bodyInfoImgContainer {
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../public/image-hero-desktop.png");
 }
 /*# sourceMappingURL=styles.css.map */
