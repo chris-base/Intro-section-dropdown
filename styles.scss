@@ -106,31 +106,38 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding: 30px 100px 0 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #bodyInfoContainer {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding-right: 30px;
+  width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 #headerText {
-  font-size: 70px;
+  font-size: 100px;
 }
 
 #bodyInfoText {
   font-size: 18px;
   color: $medium-gray;
+  line-height: 30px;
+  width: 60%;
 }
 
 #bodyInfoImgContainer {
   width: 100%;
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   background-image: url("../../public/image-hero-desktop.png");
 }
 
@@ -145,6 +152,7 @@ body {
   border-radius: 10px;
   padding: 0px 30px;
   justify-content: center;
+  margin-top: 50px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -157,5 +165,55 @@ body {
 }
 
 #logosContainer {
+  margin-top: 50px;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.compLogo {
+  width: 23%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#databizLogo {
+  background-image: url("../../public/client-databiz.svg");
+}
+
+#audioPhileLogo {
+  background-image: url("../../public/client-audiophile.svg");
+}
+
+#meetLogo {
+  background-image: url("../../public/client-meet.svg");
+}
+
+#makerLogo {
+  background-image: url("../../public/client-maker.svg");
+}
+
+@media (max-width: 1580px) {
+  #headerText {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 1190px) {
+  #mainBodyContainer {
+    padding: 10px 30px;
+  }
+
+  #bodyInfoText {
+    width: 80%;
+  }
+
+  #learnMoreButton {
+    margin-top: 10px;
+  }
 }
