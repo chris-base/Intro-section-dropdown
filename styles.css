@@ -121,6 +121,19 @@ body {
   border-color: #141414;
 }
 
+#headerMenuDropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("../../public/icon-menu.svg");
+}
+
 @media (max-width: 920px) {
   .headerButton {
     margin: 0 10px;
@@ -296,6 +309,23 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #headerButtonContainer {
+    display: none;
+  }
+  #loginButtonContainer {
+    display: none;
+  }
+  #registerButtonContainer {
+    display: none;
+  }
+  #headerMenuDropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #headerContainer {
+    height: 70px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
