@@ -122,9 +122,7 @@ body {
 }
 
 #headerMenuDropdown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   cursor: pointer;
   width: 35px;
   height: 35px;
@@ -138,6 +136,24 @@ body {
   .headerButton {
     margin: 0 10px;
   }
+}
+
+#drawerContainer {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#drawerWhiteContainer {
+  background-color: white;
 }
 
 #mainBodyContainer {
@@ -294,13 +310,14 @@ body {
             justify-content: center;
   }
   #headerText {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     width: 100%;
+    white-space: nowrap;
   }
   #bodyInfoText {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 5px;
     text-align: center;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -309,6 +326,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #logosContainer {
+    margin-top: 20px;
   }
   #headerButtonContainer {
     display: none;
@@ -326,6 +346,7 @@ body {
   }
   #headerContainer {
     height: 70px;
+    padding: 0 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

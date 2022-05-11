@@ -10,6 +10,8 @@ body {
   font-size: 18px;
 }
 
+// Main header styles
+
 #headerContainer {
   width: 100%;
   height: 100px;
@@ -97,7 +99,7 @@ body {
 }
 
 #headerMenuDropdown {
-  display: flex;
+  display: none;
   cursor: pointer;
   width: 35px;
   height: 35px;
@@ -112,6 +114,27 @@ body {
     margin: 0 10px;
   }
 }
+
+// End of header styles
+// Start of drawer styles
+
+#drawerContainer {
+  display: none;
+  flex-direction: row-reverse;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#drawerWhiteContainer {
+  background-color: white;
+}
+
+// End of drawer styles
+// Start of body styles
 
 #mainBodyContainer {
   width: 100%;
@@ -249,14 +272,15 @@ body {
   }
 
   #headerText {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     width: 100%;
+    white-space: nowrap;
   }
 
   #bodyInfoText {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 5px;
     text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -265,6 +289,10 @@ body {
 
   #learnMoreContainer {
     justify-content: center;
+  }
+
+  #logosContainer {
+    margin-top: 20px;
   }
 
   #headerButtonContainer {
@@ -285,5 +313,6 @@ body {
 
   #headerContainer {
     height: 70px;
+    padding: 0 10px;
   }
 }
