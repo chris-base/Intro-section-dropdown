@@ -53,10 +53,6 @@ body {
 
   &:hover {
     color: $almost-black;
-
-    .headerButtonDropDown {
-      filter: brightness(0) saturate(100%);
-    }
   }
 }
 
@@ -68,6 +64,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../public/icon-arrow-down.svg");
+}
+
+.headerDropdownButtonWithIcon {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $almost-black;
+
+    .headerButtonDropDown {
+      filter: brightness(0) saturate(100%);
+    }
+  }
 }
 
 #loginRegisterContainer {
@@ -116,6 +125,37 @@ body {
 }
 
 // End of header styles
+// Header dropdown styles
+
+#featureHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  cursor: pointer;
+  color: $medium-gray;
+}
+
+#companyHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  cursor: pointer;
+  color: $medium-gray;
+}
+
+#featureDropdownContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  margin-top: 50px;
+}
+
+// End of header dropdown styles
 // Start of drawer styles
 
 #drawerContainer {
@@ -138,8 +178,16 @@ body {
   color: $medium-gray;
 }
 
-#drawerCloseButton {
+#drawerCloseButtonContainer {
+  height: 35px;
   width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#drawerCloseButton {
+  cursor: pointer;
+  width: 35px;
   height: 35px;
   background-size: 35px;
   background-repeat: no-repeat;
