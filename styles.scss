@@ -146,13 +146,51 @@ body {
 }
 
 #featureDropdownContainer {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
   position: absolute;
   margin-top: 50px;
+  padding: 15px 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.dropdownIconTextContainer {
+  display: flex;
+  align-items: center;
+}
+
+.dropdownText {
+  line-height: 0;
+}
+
+.dropdownIcon {
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 7px 0 0;
+}
+
+#dropdownTodoIcon {
+  background-image: url("../../public/icon-todo.svg");
+}
+
+#dropdownCalendarIcon {
+  background-image: url("../../public/icon-calendar.svg");
+}
+
+#dropdownRemindersIcon {
+  background-image: url("../../public/icon-reminders.svg");
+}
+
+#dropdownPlanningIcon {
+  background-image: url("../../public/icon-planning.svg");
 }
 
 // End of header dropdown styles
