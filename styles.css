@@ -238,6 +238,23 @@ body {
   background-image: url("../../public/icon-planning.svg");
 }
 
+#companyDropdownContainer {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  margin-top: 50px;
+  padding: 15px 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 #drawerContainer {
   display: none;
   -webkit-box-orient: horizontal;
