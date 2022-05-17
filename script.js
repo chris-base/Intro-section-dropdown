@@ -6,6 +6,10 @@ document.getElementById("headerMenuDropdown").addEventListener("click", function
 // Closing the drawer on mobile by clicking the close button in the drawer
 document.getElementById("drawerCloseButton").addEventListener("click", function (event) {
   document.getElementById("drawerContainer").style.display = "none";
+  document.getElementById("companyDrawerDropdownContainer").style.display = "none";
+  isCompanyDrawerDropdownOpen = false;
+  document.getElementById("featureDrawerDropdownContainer").style.display = "none";
+  isFeatureDrawerDropdownOpen = false;
 });
 
 // Used to check if the feature drop down is open
@@ -42,6 +46,38 @@ document.getElementById("companyHeaderForClick").addEventListener("click", funct
   }
 });
 
+// Feature drawer button
+
+let isFeatureDrawerDropdownOpen = false;
+
+document.getElementById("drawerFeatureButtonClick").addEventListener("click", function (event) {
+  if (isFeatureDrawerDropdownOpen) {
+    document.getElementById("featureDrawerDropdownContainer").style.display = "none";
+    document.getElementById("drawerFeatureDropdownIcon").style.backgroundImage = "url(../../public/icon-arrow-down.svg)";
+    isFeatureDrawerDropdownOpen = false;
+  } else {
+    document.getElementById("featureDrawerDropdownContainer").style.display = "flex";
+    document.getElementById("drawerFeatureDropdownIcon").style.backgroundImage = "url(../../public/icon-arrow-up.svg)";
+    isFeatureDrawerDropdownOpen = true;
+  }
+});
+
+// Company drawer button
+
+let isCompanyDrawerDropdownOpen = false;
+
+document.getElementById("drawerCompanyButtonClick").addEventListener("click", function (event) {
+  if (isCompanyDrawerDropdownOpen) {
+    document.getElementById("companyDrawerDropdownContainer").style.display = "none";
+    document.getElementById("drawerCompanyDropdownIcon").style.backgroundImage = "url(../../public/icon-arrow-down.svg)";
+    isCompanyDrawerDropdownOpen = false;
+  } else {
+    document.getElementById("companyDrawerDropdownContainer").style.display = "flex";
+    document.getElementById("drawerCompanyDropdownIcon").style.backgroundImage = "url(../../public/icon-arrow-up.svg)";
+    isCompanyDrawerDropdownOpen = true;
+  }
+});
+
 // General click on DOM to see if the click was within and divs checked
 document.addEventListener("click", function (event) {
   // If the click was ouside the drawer, or the hamburger menu button
@@ -51,6 +87,10 @@ document.addEventListener("click", function (event) {
   // Hide the drawer if the click is outside of the divs above
   if (!isClickInsideDrawer) {
     document.getElementById("drawerContainer").style.display = "none";
+    document.getElementById("companyDrawerDropdownContainer").style.display = "none";
+    isCompanyDrawerDropdownOpen = false;
+    document.getElementById("featureDrawerDropdownContainer").style.display = "none";
+    isFeatureDrawerDropdownOpen = false;
   }
 
   // Check if click is outside of the feature dropdown box, or the feature button
