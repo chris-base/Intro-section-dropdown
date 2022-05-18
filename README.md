@@ -14,6 +14,10 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ## Overview
 
+Your challenge is to build out this intro section with dropdown navigation and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
 ### The challenge
 
 Users should be able to:
@@ -24,14 +28,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/Screenshot-Intro-Section-with-Dropdown.png)
 
 ### Links
 
 - Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://chris-base.github.io/Intro-section-dropdown/)
 
 ## My process
+
+Created desktop layout, made mobile layout. Setup drawer for mobile layout. Made layouts for dropdowns of desktop and drawers, make functionality for clicking buttons to open dropdowns/drawer. Made functionality for clicks outside of divs to close drawer/dropdowns.
 
 ### Built with
 
