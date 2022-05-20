@@ -81,7 +81,7 @@ body {
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../public/icon-arrow-down.svg");
+  background-image: url("./public/icon-arrow-down.svg");
 }
 
 .headerDropdownButtonWithIcon {
@@ -142,7 +142,7 @@ body {
   background-size: 35px;
   background-repeat: no-repeat;
   background-position: center top;
-  background-image: url("../../public/icon-menu.svg");
+  background-image: url("./public/icon-menu.svg");
 }
 
 @media (max-width: 920px) {
@@ -223,19 +223,19 @@ body {
 }
 
 #dropdownTodoIcon {
-  background-image: url("../../public/icon-todo.svg");
+  background-image: url("./public/icon-todo.svg");
 }
 
 #dropdownCalendarIcon {
-  background-image: url("../../public/icon-calendar.svg");
+  background-image: url("./public/icon-calendar.svg");
 }
 
 #dropdownRemindersIcon {
-  background-image: url("../../public/icon-reminders.svg");
+  background-image: url("./public/icon-reminders.svg");
 }
 
 #dropdownPlanningIcon {
-  background-image: url("../../public/icon-planning.svg");
+  background-image: url("./public/icon-planning.svg");
 }
 
 #companyDropdownContainer {
@@ -296,7 +296,7 @@ body {
   background-size: 35px;
   background-repeat: no-repeat;
   background-position: right;
-  background-image: url("../../public/icon-close-menu.svg");
+  background-image: url("./public/icon-close-menu.svg");
 }
 
 .drawerButton {
@@ -316,7 +316,7 @@ body {
   background-size: 12px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../../public/icon-arrow-down.svg");
+  background-image: url("./public/icon-arrow-down.svg");
 }
 
 .drawerLoginRegText {
@@ -397,7 +397,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("../../public/image-hero-desktop.png");
+  background-image: url("./public/image-hero-desktop.png");
 }
 
 #learnMoreContainer {
@@ -452,19 +452,19 @@ body {
 }
 
 #databizLogo {
-  background-image: url("../../public/client-databiz.svg");
+  background-image: url("./public/client-databiz.svg");
 }
 
 #audioPhileLogo {
-  background-image: url("../../public/client-audiophile.svg");
+  background-image: url("./public/client-audiophile.svg");
 }
 
 #meetLogo {
-  background-image: url("../../public/client-meet.svg");
+  background-image: url("./public/client-meet.svg");
 }
 
 #makerLogo {
-  background-image: url("../../public/client-maker.svg");
+  background-image: url("./public/client-maker.svg");
 }
 
 #featureDrawerDropdownContainer {
@@ -520,7 +520,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     background-position: center top;
-    background-image: url("../../public/image-hero-mobile.png");
+    background-image: url("./public/image-hero-mobile.png");
   }
   #bodyInfoContainer {
     padding: 0;
