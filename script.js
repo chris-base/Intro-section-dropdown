@@ -1,10 +1,10 @@
 // Opening the drawer on mobile by clicking the hamburger menu button
-document.getElementById("headerMenuDropdown").addEventListener("click", function (event) {
+document.getElementById("headerMenuDropdown").addEventListener("click", function () {
   document.getElementById("drawerContainer").style.display = "flex";
 });
 
 // Closing the drawer on mobile by clicking the close button in the drawer
-document.getElementById("drawerCloseButton").addEventListener("click", function (event) {
+document.getElementById("drawerCloseButton").addEventListener("click", function () {
   document.getElementById("drawerContainer").style.display = "none";
   document.getElementById("companyDrawerDropdownContainer").style.display = "none";
   isCompanyDrawerDropdownOpen = false;
@@ -18,14 +18,14 @@ let isFeatureDropdownOpen = false;
 // When clicking the features button in the header, check if the dropdown is already open
 // If already open, close it and reset all variables/styling
 // If not open, show dropdown, change isFeatureDropdownOpen, and change icon image
-document.getElementById("featureHeaderForClick").addEventListener("click", function (event) {
+document.getElementById("featureHeaderForClick").addEventListener("click", function () {
   if (isFeatureDropdownOpen) {
     document.getElementById("featureDropdownContainer").style.display = "none";
-    document.getElementById("featureDropDownIcon").style.backgroundImage = "url(../../public/icon-arrow-down.svg)";
+    document.getElementById("featureDropDownIcon").style.backgroundImage = "url(./public/icon-arrow-down.svg)";
     isFeatureDropdownOpen = false;
   } else {
     document.getElementById("featureDropdownContainer").style.display = "flex";
-    document.getElementById("featureDropDownIcon").style.backgroundImage = "url(../../public/icon-arrow-up.svg)";
+    document.getElementById("featureDropDownIcon").style.backgroundImage = "url(./public/icon-arrow-up.svg)";
     isFeatureDropdownOpen = true;
   }
 });
@@ -34,14 +34,14 @@ document.getElementById("featureHeaderForClick").addEventListener("click", funct
 
 let isCompanyDropdownOpen = false;
 
-document.getElementById("companyHeaderForClick").addEventListener("click", function (event) {
+document.getElementById("companyHeaderForClick").addEventListener("click", function () {
   if (isCompanyDropdownOpen) {
     document.getElementById("companyDropdownContainer").style.display = "none";
-    document.getElementById("companyDropDownIcon").style.backgroundImage = "url(../../public/icon-arrow-down.svg)";
+    document.getElementById("companyDropDownIcon").style.backgroundImage = "url(./public/icon-arrow-down.svg)";
     isCompanyDropdownOpen = false;
   } else {
     document.getElementById("companyDropdownContainer").style.display = "flex";
-    document.getElementById("companyDropDownIcon").style.backgroundImage = "url(../../public/icon-arrow-up.svg)";
+    document.getElementById("companyDropDownIcon").style.backgroundImage = "url(./public/icon-arrow-up.svg)";
     isCompanyDropdownOpen = true;
   }
 });
@@ -50,14 +50,14 @@ document.getElementById("companyHeaderForClick").addEventListener("click", funct
 
 let isFeatureDrawerDropdownOpen = false;
 
-document.getElementById("drawerFeatureButtonClick").addEventListener("click", function (event) {
+document.getElementById("drawerFeatureButtonClick").addEventListener("click", function () {
   if (isFeatureDrawerDropdownOpen) {
     document.getElementById("featureDrawerDropdownContainer").style.display = "none";
-    document.getElementById("drawerFeatureDropdownIcon").style.backgroundImage = "url(../../public/icon-arrow-down.svg)";
+    document.getElementById("drawerFeatureDropdownIcon").style.backgroundImage = "url(./public/icon-arrow-down.svg)";
     isFeatureDrawerDropdownOpen = false;
   } else {
     document.getElementById("featureDrawerDropdownContainer").style.display = "flex";
-    document.getElementById("drawerFeatureDropdownIcon").style.backgroundImage = "url(../../public/icon-arrow-up.svg)";
+    document.getElementById("drawerFeatureDropdownIcon").style.backgroundImage = "url(./public/icon-arrow-up.svg)";
     isFeatureDrawerDropdownOpen = true;
   }
 });
@@ -66,14 +66,14 @@ document.getElementById("drawerFeatureButtonClick").addEventListener("click", fu
 
 let isCompanyDrawerDropdownOpen = false;
 
-document.getElementById("drawerCompanyButtonClick").addEventListener("click", function (event) {
+document.getElementById("drawerCompanyButtonClick").addEventListener("click", function () {
   if (isCompanyDrawerDropdownOpen) {
     document.getElementById("companyDrawerDropdownContainer").style.display = "none";
-    document.getElementById("drawerCompanyDropdownIcon").style.backgroundImage = "url(../../public/icon-arrow-down.svg)";
+    document.getElementById("drawerCompanyDropdownIcon").style.backgroundImage = "url(./public/icon-arrow-down.svg)";
     isCompanyDrawerDropdownOpen = false;
   } else {
     document.getElementById("companyDrawerDropdownContainer").style.display = "flex";
-    document.getElementById("drawerCompanyDropdownIcon").style.backgroundImage = "url(../../public/icon-arrow-up.svg)";
+    document.getElementById("drawerCompanyDropdownIcon").style.backgroundImage = "url(./public/icon-arrow-up.svg)";
     isCompanyDrawerDropdownOpen = true;
   }
 });
@@ -101,7 +101,7 @@ document.addEventListener("click", function (event) {
   // If outside feature button/dropdown box, hide the dropdown box and change arrow icon
   if (!isClickInsideFeatureDropdown) {
     document.getElementById("featureDropdownContainer").style.display = "none";
-    document.getElementById("featureDropDownIcon").style.backgroundImage = "url(../../public/icon-arrow-down.svg)";
+    document.getElementById("featureDropDownIcon").style.backgroundImage = "url(./public/icon-arrow-down.svg)";
     isFeatureDropdownOpen = false;
   }
 
@@ -111,7 +111,7 @@ document.addEventListener("click", function (event) {
 
   if (!isClickInsideCompanyDropdown) {
     document.getElementById("companyDropdownContainer").style.display = "none";
-    document.getElementById("companyDropDownIcon").style.backgroundImage = "url(../../public/icon-arrow-down.svg)";
+    document.getElementById("companyDropDownIcon").style.backgroundImage = "url(./public/icon-arrow-down.svg)";
     isCompanyDropdownOpen = false;
   }
 });
