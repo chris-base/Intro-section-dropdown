@@ -88,8 +88,10 @@ document.addEventListener("click", function (event) {
   if (!isClickInsideDrawer) {
     document.getElementById("drawerContainer").style.display = "none";
     document.getElementById("companyDrawerDropdownContainer").style.display = "none";
+    document.getElementById("drawerCompanyDropdownIcon").style.backgroundImage = "url(./public/icon-arrow-down.svg)";
     isCompanyDrawerDropdownOpen = false;
     document.getElementById("featureDrawerDropdownContainer").style.display = "none";
+    document.getElementById("drawerFeatureDropdownIcon").style.backgroundImage = "url(./public/icon-arrow-down.svg)";
     isFeatureDrawerDropdownOpen = false;
   }
 
